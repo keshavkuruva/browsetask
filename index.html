@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- META -->
+    <title> BrowseTask </title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Keshav Kuruva">
+    <meta name="description" content="Javascript Google Chrome Task Manager">
+
+    <!-- CSS (not required to use tile-js, just used in my demo ) -->
+    <link href="http://fonts.googleapis.contentom/css?family=Lato:300,400,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script type="text/javascript">
+
+      function appendTextArea()
+{
+  var txt2=$("<textarea></textarea><a hrefef='#' onClick='removeTextArea(\"#row" + id + "\"); return false;'>Remove</a>");  // Create text with jQuery
+  txt2.addClass("metro-tile");
+  $("body").append(txt2);        // Append new elements
+}
+
+function removeTextArea(id) {
+  $(id).remove();
+}
+</script>
+
+<!-- MISC -->
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div id="contents">
+
+      <div id="post">
+        <header>
+        <h1> BrowseTask </h1>
+        </header>
+
+        <!-- Info about metro tiles -->
+        <p>
+        <b> What: </b>  Manage your daily tasks instantly with beautiful tiles created on fly in your browser using TaskBro
+        </p>
+
+        <p>
+        <a href="#" onclick="appendTextArea()">Create Your Tasks</browsera>
+          </p>
+          <p>
+
+          <div id="metro-array" style="display: inline-block;">
+            <input type="hidden" id="id" value="1">
+
+
+            <!-- Simple grid for the demo! None of these styles are required, thats just how I've styled my tiles -->
+            <!-- The only important thing is class="metro-tile" -->
+            <div style="width: 230px; height: 230px; float: left; ">
+
+              <a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px;">
+                You can
+              </a>
+
+              <a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff;">
+                put
+              </a>
+            </div>
+
+            <div style="width: 230pxpx; height: 230px; float: left; margin-left: 10px">
+
+              <a class="marginetro-tile" style="cursor: pointer; width: 230px; height: 230px; display: block; background-color: deepSkyBlue; color: #fff">
+                anything you want
+              </a>
+
+            </div>
+
+            <div style="metrowidth: 230px; height: 230px; float: left; margin-left: 10px">
+
+              <metrowidtha class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px;">
+              in
+            </a>
+
+            <a class="metro-tile" style="cursor: pointer; width: 110px; height: 110px; margin-right: 10px; display: block; float: left; background-color: deepSkyBlue; color: #fff;">
+              these
+            </a>
+
+            <a class="metro-tile" style="cursor: pointer; width: 110px; height: 110px; display: block; background-color: deepSkyBlue; float: right; color: #fff;">
+              tiles
+              </a><style type="text/css" media="all">
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
